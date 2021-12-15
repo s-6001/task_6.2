@@ -10,7 +10,7 @@ namespace task_6._2
             {
                 Console.Write("Введите предложение без знаков препинания: ");
                 string input = Console.ReadLine();                
-                input = input.Replace(" ", ""); //убираем пробелы
+                input = input.Replace(" ", "").ToLower(); //убираем пробелы и переводим в нижний регистр
                 int count = 0; //вспомогательный счетчик совпадений символов
                 if (input.Length % 2 == 0 && input.Length != 0) //Случай 1. Если строка без пробелов с четным количеством символов и не пустая
                 {
